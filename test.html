@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Preview</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 p-8">
+
+    <div class="flex flex-col md:flex-row gap-6 max-w-6xl mx-auto">
+        
+        <aside class="w-full md:w-72 bg-white p-6 rounded-2xl shadow-sm border border-slate-200 h-fit">
+            <div class="flex items-center gap-2 mb-8 text-indigo-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                </svg>
+                <h2 class="font-bold text-lg text-slate-800">Filter & Sort</h2>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Urutkan Harga</h3>
+                <div class="space-y-3">
+                    <label class="flex items-center cursor-pointer group">
+                        <input type="radio" name="sort" class="w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500" checked>
+                        <span class="ml-3 text-slate-600 group-hover:text-indigo-600 transition-colors">Terbaru (Default)</span>
+                    </label>
+                    <label class="flex items-center cursor-pointer group">
+                        <input type="radio" name="sort" class="w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500">
+                        <span class="ml-3 text-slate-600 group-hover:text-indigo-600 transition-colors">Termurah</span>
+                    </label>
+                    <label class="flex items-center cursor-pointer group">
+                        <input type="radio" name="sort" class="w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500">
+                        <span class="ml-3 text-slate-600 group-hover:text-indigo-600 transition-colors">Termahal</span>
+                    </label>
+                </div>
+            </div>
+
+            <hr class="border-slate-100 mb-8">
+
+            <div class="mb-8">
+                <h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Tipe Properti</h3>
+                <select class="w-full bg-slate-50 border border-slate-200 text-slate-700 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block p-2.5 outline-none">
+                    <option selected>Pilih Tipe</option>
+                    <option value="1">Apartemen</option>
+                    <option value="2">Kost Putra</option>
+                    <option value="3">Kost Putri</option>
+                    <option value="4">Kontrakan</option>
+                </select>
+            </div>
+
+            <button class="w-full bg-slate-900 hover:bg-indigo-600 text-white font-bold py-3 px-4 rounded-xl transition-all duration-300 shadow-lg shadow-slate-200 hover:shadow-indigo-200 text-sm">
+                Terapkan Filter
+            </button>
+            
+            <button class="w-full mt-3 py-2 text-xs font-semibold text-slate-400 hover:text-rose-500 transition-colors">
+                Reset Semua
+            </button>
+        </aside>
+        <div class="flex-1 bg-white/50 border-2 border-dashed border-slate-300 rounded-2xl flex items-center justify-center text-slate-400 font-medium">
+            Konten Card Akan Muncul di Sini
+        </div>
+
+    </div>
+
+</body>
+</html>
